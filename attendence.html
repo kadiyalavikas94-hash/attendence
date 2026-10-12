@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="attendence.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Attendance Management System</h1>
+
+        <p><b>Date:</b> <span id="today"></span></p>
+
+        <div class="form">
+            <input type="text" id="studentName"
+                   placeholder="Enter student name">
+            <button onclick="addStudent()">Add Student</button>
+        </div>
+
+        <div class="summary">
+            <div class="card">
+                <p>Total Students</p>
+                <h2 id="total">0</h2>
+            </div>
+
+            <div class="card">
+                <p>Present</p>
+                <h2 id="presentCount">0</h2>
+            </div>
+
+            <div class="card">
+                <p>Absent</p>
+                <h2 id="absentCount">0</h2>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Roll No.</th>
+                    <th>Student Name</th>
+                    <th>Attendance</th>
+                    <th>Percentage</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="studentList"></tbody>
+        </table>
+
+        <p id="emptyMessage">No students added yet.</p>
+    </div>
+
+    <script src="attendence.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Attendance Management System</h1>
+
+        <p><b>Date:</b> <span id="today"></span></p>
+
+        <div class="form">
+            <input type="text" id="studentName"
+                   placeholder="Enter student name">
+            <button onclick="addStudent()">Add Student</button>
+        </div>
+
+        <div class="summary">
+            <div class="card">
+                <p>Total Students</p>
+                <h2 id="total">0</h2>
+            </div>
+
+            <div class="card">
+                <p>Present</p>
+                <h2 id="presentCount">0</h2>
+            </div>
+
+            <div class="card">
+                <p>Absent</p>
+                <h2 id="absentCount">0</h2>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Roll No.</th>
+                    <th>Student Name</th>
+                    <th>Attendance</th>
+                    <th>Percentage</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="studentList"></tbody>
+        </table>
+
+        <p id="emptyMessage">No students added yet.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

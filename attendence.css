@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000015;
+}
+
+h1 {
+    text-align: center;
+    color: #234e70;
+}
+
+.form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, button, select {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.card {
+    flex: 1;
+    padding: 15px;
+    background: #eaf2ff;
+    border-radius: 8px;
+}
+
+.card h2 {
+    color: #2563eb;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #234e70;
+    color: white;
+}
+
+.present {
+    color: green;
+    font-weight: bold;
+}
+
+.absent {
+    color: red;
+    font-weight: bold;
+}
+
+.delete {
+    background: #dc2626;
+}
+
+#emptyMessage {
+    text-align: center;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 12px;
+    }
+
+    .form {
+        flex-wrap: wrap;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+}
